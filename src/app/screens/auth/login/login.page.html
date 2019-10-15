@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="login">
+    
+    <div class="login-content">
+        <div class="logo">
+          <ion-img src='./../../../../assets/icon/name-login.png'></ion-img>
+        </div>
+    
+        <form class="form">
+          <div class="user-cred">
+            <input type="email" placeholder="user@user.ru" class="email">
+            <input [type]="isShow ? 'text' : 'password'" [placeholder]="!isShow ? '&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;' : 'Password'" class="password">
+            <img src="./../../../../assets/icon/eye.png" class="eye" (click)='togglePass()'>
+          </div>
+    
+          <div class="form-btn">
+            <button class="login-btn">LOGIN</button>
+            <button class="regist-btn" (click)='goToRegist()'>REGISTER</button>
+          </div>
+        </form>
+
+        <div class="social-login">
+          <div class="social-text">
+              <ion-img src='./../../../../assets/icon/continue-line.png'></ion-img>
+              <span class="text">Or continue with</span>
+              <ion-img src='./../../../../assets/icon/continue-line.png'></ion-img>
+          </div>
+
+          <div class="social-btn">
+            <button class="google">
+              <img src="./../../../../assets/icon/G+.png">
+              <span>GOOGLE+</span>
+            </button>
+
+            <button class="facebook">
+              <img src="./../../../../assets/icon/facebook.png">
+              <span>FACEBOOK</span>
+            </button>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</ion-content>

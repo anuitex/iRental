@@ -1,0 +1,54 @@
+.tutorial-container {
+    background-image: url('./../../../assets/images/tutorial-bg.png');
+    background-size: cover;
+
+    ion-slides  {
+        --bullet-background-active: white;
+
+        ion-slide {
+            height: 100vh;
+            flex-direction: column;
+            color: #000;
+
+            .slide-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .slide-title {
+                    color: white;
+                    font-size: 20px;
+                }
+
+                .slide-description {
+                    font-size: 16px;
+                    color: white;
+                    margin-top: 10px;
+                }
+            }
+        
+        }
+    }
+    
+    .greeting-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        ion-img {
+            width: 102px;
+            height: 72.94px;
+        }
+    }
+    
+    .top-button {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: white;
+        font-size: 14px;
+        z-index: 2;
+    }
+}

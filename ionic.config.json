@@ -1,0 +1,7 @@
+{
+  "name": "IRental",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

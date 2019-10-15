@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar class="header-background">
+    <ion-buttons slot="start">
+      <ion-back-button text="" color='light'></ion-back-button>
+    </ion-buttons>
+    <ion-title color='light'>Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="regist">
+    <div class="regist-content">
+      <div class="main">
+          <form class="main-info">
+            <input type="email" placeholder="Email" class="email input-css">
+            <input type="password" placeholder="Password" class="password input-css">
+          </form>
+      </div>
+
+      <div class="personal">
+        <h5 class="personal-title title" (click)='showDataPicker()'>Personal Information</h5>
+        <form class="personal-info">
+          <input type="text" placeholder="First name" class="first-name input-css">
+          <input type="text" placeholder="Last name" class="last-name input-css">
+          <div class="gender-сontainer">
+            <div class="gender input-css" (click)='toggleGenderPopup()'>
+              <ion-img class="arrow-drop" src='./../../../../assets/icon/arrow-drop.png'></ion-img>
+              <span>{{ gender }}</span>
+            </div>
+            <div class="gender-popup" *ngIf='isShowGender'>
+              <span *ngFor='let genderEl of genderArray' (click)='selectGender(genderEl)'>{{ genderEl }}</span>
+            </div>
+          </div>
+          <input type="text" placeholder="Country" class="country input-css">
+          <input type="text" placeholder="City" class="city input-css">
+          <input type="text" placeholder="Address" class="address input-css">
+        </form>
+      </div>
+
+      <div class="contact">
+        <h5 class="contact-title title">Contact Information</h5>
+        <form class='contact-info'>
+          <input type="number" class="number input-css" placeholder="Number phone">
+        </form>
+      </div>
+    </div>
+
+    <button class="regist-btn" (clicl)='regist()'>REGISTER</button>
+  </div>
+</ion-content>

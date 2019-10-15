@@ -1,0 +1,36 @@
+<ion-content fullscreen>
+    <div class="tutorial-container">
+        <div class="greeting-screen" [hidden]='isShowTutorial'>
+            <ion-img src="./../../../assets/icon/name.png"></ion-img>
+        </div>
+        <span class="top-button" [hidden]='!isShowTutorial' (click)='finishTutorial()'>{{ topButtonText }}</span>
+        <ion-slides pager="true" (ionSlideReachEnd)="slideDrag()" *ngIf='isShowTutorial' #slides>
+            <ion-slide class="step-one" >
+                <div class="slide-content slide1-content">
+                    <ion-img src="./../../../assets/icon/slide1.png"></ion-img>
+
+                    <span class="slide-title slide1-title">Find great property offers</span>
+                    <span class="slide-description slide1-description">for business as well as personal use</span>
+                </div>
+            </ion-slide>
+        
+            <ion-slide class="step-two">
+                <div class="slide-content slide1-content">
+                    <ion-img src="./../../../assets/icon/slide2.png"></ion-img>
+
+                    <span class="slide-title slide1-title">Share the best rental experiences</span>
+                    <span class="slide-description slide1-description">with users all over the world</span>
+                </div>
+            </ion-slide>
+        
+            <ion-slide class="step-four">
+                <div class="slide-content slide1-content">
+                    <ion-img src="./../../../assets/icon/slide3.png"></ion-img>
+
+                    <span class="slide-title slide1-title">Create preference lists</span>
+                    <span class="slide-description slide1-description">and save favourite property options</span>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </div>
+</ion-content>

@@ -1,0 +1,133 @@
+.login {
+    background-image: url('./../../../../assets/images/auth-bg.png');
+    background-size: cover;
+    height: 100vh;
+
+    .login-content {
+        position: relative;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            padding-top: 37px;
+            width: 100%;
+            ion-img {
+                width: 82px;
+                height: 56px;
+            }
+        }
+        
+        .form {
+            position: relative;
+            width: 100%;
+            margin-top: 35%;
+    
+            .user-cred {
+                position: relative;
+                width: 100%;
+    
+    
+                .email,
+                .password {
+                    width: 100%;
+                    padding: 18px 0 18px 5%;
+                    border: none;
+                    outline: none;
+                    color: #777478;
+                    border-radius: 4px;
+                    font-size: 16px;
+                }
+    
+                .password {
+                    margin-top: 10px;
+                }
+    
+                .eye {
+                    position: absolute;
+                    bottom: 21px;
+                    right: 25px;
+                }
+            }
+    
+            .form-btn {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                position: relative;
+                width: 100%;
+                margin-top: 25px;
+        
+                .login-btn,
+                .regist-btn {
+                    width: 156px;
+                    padding: 13px 0 13px 0;
+                    border-radius: 4px;
+                    color: white;
+                }
+
+                .login-btn {
+                    background-color: #1A9FAD;
+                }
+    
+                .regist-btn {
+                    background-color: transparent;
+                    border: 1px solid white;
+                }
+            }
+        }
+
+        .social-login {
+            position: absolute;
+            width: 100%;
+            bottom: 10%;
+
+            .social-text {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .text {
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+
+            .social-btn {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 25px;
+
+                .google,
+                .facebook {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 156px;
+                    color: white;
+                    padding: 13px 0 13px 0;
+                    font-size: 14px;
+                    border-radius: 4px;
+
+                    span {
+                        margin-left: 11px;
+                    }
+                }
+
+                .google {
+                    background-color: #DF4A32;
+                }
+
+                .facebook {
+                    background-color: #49639F;
+                }
+            }
+        }
+    }
+}

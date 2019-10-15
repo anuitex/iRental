@@ -1,0 +1,90 @@
+.header-background {
+    --background: #0097A7;
+}
+
+.regist {
+    position: relative;
+    background-color: #F6F6F6;
+    min-height: 100vh;
+
+    .regist-content {
+        position: relative;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        padding-bottom: 65px;
+
+        .main-info {
+            position: relative;
+            width: 100%;
+        }
+
+        .personal {
+            position: relative;
+            width: 100%;
+
+            .gender-сontainer {
+                position: relative;
+
+                .gender {
+                    position: relative;
+                    background-color: white;
+                    width: 100%;
+                    height: 100%;
+    
+                    .arrow-drop {
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        right: 20px;
+                        bottom: 14px;
+                    }
+                }
+
+                .gender-popup {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    width: 100%;
+                    padding: 0 0 0 5%;
+                    border: 1px solid #D3D3D3;
+                    background-color: white;
+                    z-index: 10;
+
+                    span {
+                        display: block;
+                        padding: 10px 0 10px 0;
+                    }
+                }
+            }
+        }
+
+        .input-css {
+            width: 100%;
+            padding: 18px 0 18px 5%;
+            outline: none;
+            color: #777478;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 10px;
+            border: 1px solid #D3D3D3;
+            border-radius: 4px;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #117786;
+        }
+    }
+
+    .regist-btn {
+        position: absolute;
+        width: 100%;
+        color: white;
+        background-color: #0097A7;
+        height: 44px;
+        font-size: 16px;
+        bottom: 0;
+    }
+}
